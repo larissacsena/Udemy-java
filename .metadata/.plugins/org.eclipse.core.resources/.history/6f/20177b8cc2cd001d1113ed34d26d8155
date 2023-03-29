@@ -1,0 +1,15 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioConversao {
+//scanner digitar os ultimos 3 salarios como string converter e retornar uma media
+//o usuario pode separar as casas decimais tanto com . quanto com ,
+	
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Digite seu primeiro salário: ");
+		String salario1 = teclado.nextLine();
+	}
+}

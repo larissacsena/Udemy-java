@@ -1,0 +1,13 @@
+package fundamentos;
+
+public class TipoString {
+	
+	public static void main(String[] args) {
+		String nome = "Maura";
+		var sobrenome = "Larissa";
+		var idade = 22;
+		var salario = 1000.20;
+		
+		System.out.printf("Nome: %s %s tem %d anos de idade e ganha %f reais", nome, sobrenome,idade,salario);
+	}
+}

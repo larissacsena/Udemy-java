@@ -1,0 +1,11 @@
+package fundamentos;
+import java.util.Date;
+
+public class Import {
+	public static void main(String[] args) {
+		//para utilizar a estrutura date eu preciso importar
+		//geralmente a de java.util
+		Date d = new Date();
+		System.out.println(d);
+	}
+}

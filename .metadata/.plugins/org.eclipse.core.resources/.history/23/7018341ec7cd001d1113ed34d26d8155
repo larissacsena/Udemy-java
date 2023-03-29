@@ -1,0 +1,45 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioConversao {
+//scanner digitar os ultimos 3 salarios como string converter e retornar uma media
+//o usuario pode separar as casas decimais tanto com . quanto com ,
+	//replace
+	
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Digite seu primeiro salário: ");
+		String salario1 = teclado.nextLine();
+		
+		System.out.println("Digite seu segundo salário: ");
+		String salario2 = teclado.nextLine();
+	
+		System.out.println("Digite seu terceiro salário: ");
+		String salario3 = teclado.nextLine();
+		
+		salario1 = salario1.replace(",", ".");
+		salario2 = salario2.replace(",", ".");
+		salario3 = salario3.replace(",", ".");
+		
+//		System.out.println(salario1);
+//		System.out.println(salario2);
+//		System.out.println(salario3);
+////		salario2.replace(",", ".");
+////		salario3.replace(",", ".");
+////		
+//		System.out.println(salario1 + salario2 + salario3);
+//		
+		double valor1 = Double.parseDouble(salario1);
+		double valor2 = Double.parseDouble(salario2);
+		double valor3 = Double.parseDouble(salario3);
+//		
+		double media = ((valor1 + valor2 + valor3)/3);
+//		
+//		
+		String resultado = String.format("A média dos ultimos 3 meses é de: R$ %.2d", media);
+		System.out.println(resultado);
+//	
+	}
+}

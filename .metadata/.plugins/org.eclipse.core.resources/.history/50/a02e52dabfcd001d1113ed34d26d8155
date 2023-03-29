@@ -1,0 +1,21 @@
+package fundamentos;
+
+public class ConversaoToString {
+	public static void main(String[] args) {
+		
+		//wrapper
+		Integer num1 = 10000;
+		System.out.println(num1.toString().length());
+		
+		//lenght - String metodo
+		
+		int num2 = 10000;
+		System.out.println(Integer.toString(num2).length());
+		//pegue um inteiro e transforme em string (qual inteiro?)
+		//posso concatenar um numero com uma string vazia = mangue
+		
+		System.out.println(("" + 200).length());
+		
+	}
+
+}

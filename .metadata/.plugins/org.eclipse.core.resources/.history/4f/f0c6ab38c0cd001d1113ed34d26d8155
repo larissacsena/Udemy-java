@@ -1,0 +1,34 @@
+package fundamentos;
+
+import javax.swing.JOptionPane;
+
+public class ConversaoToString {
+	public static void main(String[] args) {
+		
+		//wrapper
+		Integer num1 = 10000;
+		System.out.println(num1.toString().length());
+		
+		//lenght - String metodo
+		
+		int num2 = 10000;
+		System.out.println(Integer.toString(num2).length());
+		//pegue um inteiro e transforme em string (qual inteiro?)
+		//posso concatenar um numero com uma string vazia = mangue
+		
+		System.out.println(("" + 200).length());
+		
+		
+		//****STRING PARA NUMERO ==== PERIGOSO!****
+		//mostra uma janelinha onde posso inserir dados e os dados serão armazenados nas variáveis
+		
+		String valor1 = JOptionPane.showInputDialog("Digite o primeiro número");
+		String valor2 = JOptionPane.showInputDialog("Digite o segundo número");
+		System.out.println(valor1);
+		
+		System.out.println(valor1 + valor2);
+		
+		double numero1 = Double.parseDouble(valor1 + valor2);
+	}
+
+}
